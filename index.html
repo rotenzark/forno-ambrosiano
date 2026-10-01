@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <script>(function(){var r=document.documentElement;r.classList.remove('no-js');
 /* la firma: finché main.js non parte la pagnotta è pasta cruda, senza tagli né incisione; se il codice non arriva, dopo 2,5 s la pagina va allo stato finale */
 try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add('firma-attesa');window.__attesaInfornata=setTimeout(function(){r.classList.remove('firma-attesa')},2500)}}catch(e){}})()</script>
@@ -20,15 +21,69 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&amp;family=Castoro+Titling&amp;family=PT+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 <script src="js/main.js?v=1" defer></script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Bakery","name":"Forno Ambrosiano","legalName":"Forno Ambrosiano S.r.l.","description":"Forno a Milano, in Via Biella 28 (Barona): pane, focacce, pizzette e dolci fatti qui dalla fine degli anni Novanta.","slogan":"Al passo con i tempi.","url":"https://rotenzark.github.io/forno-ambrosiano/","image":"https://rotenzark.github.io/forno-ambrosiano/img/og.jpg","telephone":"+39 02 817584","priceRange":"€","address":{"@type":"PostalAddress","streetAddress":"Via Biella 28","postalCode":"20143","addressLocality":"Milano","addressRegion":"MI","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":45.43821,"longitude":9.155},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:00","closes":"13:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"16:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"16:00","closes":"19:30"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"491","bestRating":"5"}}
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Forno Ambrosiano",
+  "legalName": "Forno Ambrosiano S.r.l.",
+  "description": "Forno a Milano, in Via Biella 28 (Barona): pane, focacce, pizzette e dolci fatti qui dalla fine degli anni Novanta.",
+  "slogan": "Al passo con i tempi.",
+  "url": "https://rotenzark.github.io/forno-ambrosiano/",
+  "image": "https://rotenzark.github.io/forno-ambrosiano/img/og.jpg",
+  "telephone": "+39 02 817584",
+  "priceRange": "€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Biella 28",
+    "postalCode": "20143",
+    "addressLocality": "Milano",
+    "addressRegion": "MI",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.43821,
+    "longitude": 9.155
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "07:00",
+      "closes": "13:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "16:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "16:00",
+      "closes": "19:30"
+    }
+  ]
+}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -385,7 +440,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
       </div>
       <div class="dove__vista reveal">
         <div class="mappa">
-          <iframe title="Mappa: Forno Ambrosiano, Via Biella 28, Milano" data-i18n-title="c7.mappa" src="https://maps.google.com/maps?q=Forno%20Ambrosiano%2C%20Via%20Biella%2028%2C%20Milano&amp;z=16&amp;output=embed" width="600" height="420" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="mappa-clic" data-mappa-clic style="--mappa-h: 420px"><template><iframe title="Mappa: Forno Ambrosiano, Via Biella 28, Milano" data-i18n-title="c7.mappa" src="https://maps.google.com/maps?q=Forno%20Ambrosiano%2C%20Via%20Biella%2028%2C%20Milano&amp;z=16&amp;output=embed" width="600" height="420" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Forno+Ambrosiano,+Via+Biella+28,+Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
         </div>
       </div>
     </div>
@@ -405,7 +460,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
 <footer class="colophon">
   <p class="colophon__insegna">Forno Ambrosiano</p>
   <p class="colophon__dove">Via Biella 28, 20143 Milano · <a href="tel:+3902817584">02 817584</a></p>
-  <p class="colophon__cred" data-i18n="z.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · foto dalla scheda Google (del forno e dei clienti), recensioni da Google, le loro parole da Google (settembre 2026). La vignetta della pagnotta è disegnata.</p>
+  <p class="colophon__cred" data-i18n="z.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · <a href="privacy.html">Privacy</a> · foto dalla scheda Google (del forno e dei clienti), recensioni da Google, le loro parole da Google (settembre 2026). La vignetta della pagnotta è disegnata.</p>
   <p><a class="colophon__su" href="#inizio" data-i18n="z.su">Torna su ↑</a></p>
 </footer>
 
@@ -414,5 +469,6 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
   <img id="lightboxImg" src="" alt="">
 </div>
 
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
